@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 #google-form {
@@ -28,7 +33,6 @@
     padding: 8px;
     margin: 5px 0 10px 0;
     width: 100%;
-    border-radius: 3rem;
 }
 
 #google-form button {
@@ -40,9 +44,41 @@
     cursor: pointer;
 }
 
-label {
-    font-size: 500%;
-    font-weight: 600;
-    letter-spacing: -5px;
+/* REGISTER FORM */
+
+.register-form {
+    padding: 50px;
+}
+
+.register-form form {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 2%;
+}
+
+.register-form label {
+    display: block;
+}
+
+.input-inline input {
+    display: none;
+}
+
+.input-inline label {
+    display: block;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    margin: 5px;
+}
+
+.input-inline input:checked + label {
+    transition: 0.2s;
+    background-color: red;
+}
+
+.input-inline {
+    display: flex;
 }
 
